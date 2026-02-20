@@ -41,7 +41,7 @@ public class CaesarCipher {
         }
 
         System.out.println(alphabet);
-        shifter(shift);
+        shifter(num);
         System.out.println(shifted);
 
     }
@@ -82,8 +82,8 @@ public class CaesarCipher {
 
     public String decrypt(String message){
         String end = "";
-        String apples = "abcdefghijklmnopqrstuvwxyz";
         boolean has = false;
+
         for(int i = 0; i<message.length(); i++)
         {
             has = false;
@@ -103,9 +103,13 @@ public class CaesarCipher {
             {
                 for(int ii = 0; ii<alphabet.length; ii++)
                 {
+
+
+
                     if(shifted[ii] == message.charAt(i))
                     {
                         end += alphabet[ii];
+                        
                     }
                 }
             }

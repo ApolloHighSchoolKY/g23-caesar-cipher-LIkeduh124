@@ -19,6 +19,10 @@ public class G19 {
 
     	//Create a new cipher using the shifter(#) method
     	//Encrypt and decrypt a message with your new cipher
+		CaesarCipher ciper = new CaesarCipher(9);
+
+    	System.out.println(ciper.encrypt("i am a sigma punctuation!@#$%^&*()!"));
+    	System.out.println(ciper.decrypt("aviip"));
 
     }
 
